@@ -19,8 +19,13 @@ public class PasswordGenerator {
 
     print1();
     int len = sc.nextInt();
-    String userIn = "";
+    
     print2();
+    int numPwd = sc.nextInt();
+    
+    for(int i = 0; i < numPwd; i++) {
+    String userIn = "";
+    print3();
 
     userIn = sc.next();
     if (userIn.equals("o") || userIn.equals("O")) { // ignoring case
@@ -43,7 +48,8 @@ public class PasswordGenerator {
       if (userIn.equals("y") || userIn.equals("Y")) {
         upperCaseChar = true;
       }
-      randomPassword(len, splChar, numChar, upperCaseChar);
+      randomPassword(len, splChar, numChar, upperCaseChar); 
+     }
     }
   }
   
@@ -58,12 +64,18 @@ public class PasswordGenerator {
    
   }
   
+  private static void print2() {
+    System.out.println("----------------------------------------------------");
+    System.out.println("Enter the number of passwords you want to generate: ");  
+    System.out.println("----------------------------------------------------");
+   
+  }
   
   /**
    * Prints the second part of the menu.
    * 
    */
-  private static void print2() {   
+  private static void print3() {   
     System.out.println("----------------------------------------------------");
     System.out.println("Choose a password type from the given options below: ");
     System.out.println("1. One Time Password: 'o'");
