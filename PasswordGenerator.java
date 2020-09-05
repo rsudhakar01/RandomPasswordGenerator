@@ -64,6 +64,10 @@ public class PasswordGenerator {
    
   }
   
+  /**
+   * Prints the second part of the menu.
+   * 
+   */
   private static void print2() {
     System.out.println("----------------------------------------------------");
     System.out.println("Enter the number of passwords you want to generate: ");  
@@ -72,7 +76,7 @@ public class PasswordGenerator {
   }
   
   /**
-   * Prints the second part of the menu.
+   * Prints the third part of the menu.
    * 
    */
   private static void print3() {   
